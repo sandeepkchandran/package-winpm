@@ -29,7 +29,7 @@ jobs:
 
     - name: Local action test
       uses: ./
-      id: version
+      id: name
 
     - name: Get version
-      run: echo "Version is  ${{ steps.version.outputs.version }}"
+      run: echo "Version is  ${{ steps.name.outputs.name }}"
