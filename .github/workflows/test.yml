@@ -32,4 +32,4 @@ jobs:
       id: name
 
     - name: Get version
-      run: echo "Version is  ${{ steps.name.outputs.version }}"
+      run: echo "Version is  ${{ steps.name.outputs.full }}"
