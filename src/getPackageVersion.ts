@@ -6,7 +6,7 @@ import { join } from 'path';
  * @param path
  */
 export const findPackageJson = (path: string): string => {
-  return fs.readFileSync(join(path, 'package.json')).toString();
+  return fs.readFileSync(join(path, 'adobe.json')).toString();
 };
 
 /**
@@ -16,5 +16,5 @@ export const findPackageJson = (path: string): string => {
 export const getPackageVersion = (path: string): string => {
   const packageJson = findPackageJson(path);
 
-  return JSON.parse(packageJson).version;
+  return JSON.parse(packageJson).name;
 };
