@@ -9,8 +9,8 @@ async function run() {
 
     const result = getNodeVersion(path);
 
-    core.debug(`set output: version: ${result}`);
-    core.setOutput('version', result);
+    core.debug(`set output: full: ${result}`);
+    core.setOutput('full', result);
   } catch (error) {
     core.setFailed(error.message);
   }

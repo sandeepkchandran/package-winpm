@@ -16,6 +16,6 @@ export const findPackageJson = (path: string): string => {
 export const getPackageVersion = (path: string): string => {
   const packageJson = findPackageJson(path);
 
-  return JSON.parse(packageJson).version;
+  return JSON.parse(packageJson);
 };
 

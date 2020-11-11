@@ -5,7 +5,7 @@ inputs:
     description: 'Path of package.json'
     default: "./"
 outputs:
-  version:
+  full:
     description: "Version of package"
 runs:
   using: 'node12'
