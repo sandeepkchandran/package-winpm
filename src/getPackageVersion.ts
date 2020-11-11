@@ -6,7 +6,7 @@ import { join } from 'path';
  * @param path
  */
 export const findPackageJson = (path: string): string => {
-  return fs.readFileSync(join(path, 'adobe.json')).toString();
+  return fs.readFileSync(join(path, 'package.json')).toString();
 };
 
 /**
