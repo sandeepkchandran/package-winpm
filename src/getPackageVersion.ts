@@ -2,15 +2,15 @@ import fs from 'fs';
 import { join } from 'path';
 
 /**
- * Find adobe.json with path.
+ * Find package.json with path.
  * @param path
  */
 export const findPackageJson = (path: string): string => {
-  return fs.readFileSync(join(path, 'adobe.json')).toString();
+  return fs.readFileSync(join(path, 'package.json')).toString();
 };
 
 /**
- * Get version field within adobe.json
+ * Get version field within package.json
  * @param path
  */
 export const getPackageVersion = (path: string): string => {

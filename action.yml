@@ -1,8 +1,8 @@
-name: 'Read adobe.json version'
-description: 'Output version numbers with adobe.json'
+name: 'Read package.json version'
+description: 'Output version numbers with package.json'
 inputs:
   path:
-    description: 'Path of adobe.json'
+    description: 'Path of package.json'
     default: "./"
 outputs:
   version:

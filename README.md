@@ -1,10 +1,10 @@
 # Read package version actions
 
-Read your version in `adobe.json`
+Read your version in `package.json`
 
 ## Example workflow
 
-`adobe.json`
+`package.json`
 ```json
 
 {
@@ -15,7 +15,7 @@ Read your version in `adobe.json`
 
 `.github/workflow/test.yml`
 ```yml
-name: Get version from adobe.json
+name: Get version from package.json
 
 on: push
 
@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Read adobe.json
+      - name: Read package.json
         uses: tyankatsu0105/read-package-version-actions@v1
         id: package-version
 
@@ -39,9 +39,9 @@ jobs:
 
 ### path
 
-Path of `adobe.json`, `./` by default.
+Path of `package.json`, `./` by default.
 
-`path/to/adobe.json`
+`path/to/package.json`
 ```json
 
 {
@@ -51,7 +51,7 @@ Path of `adobe.json`, `./` by default.
 ```
 
 ```yml
-name: Get version from adobe.json
+name: Get version from package.json
 
 on: push
 
@@ -62,10 +62,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Read adobe.json
+      - name: Read package.json
         uses: tyankatsu0105/read-package-version-actions@v1
         with: 
-          path: "./path/to/adobe.json"
+          path: "./path/to/package.json"
         id: package-version
 
       - name: Show version number
