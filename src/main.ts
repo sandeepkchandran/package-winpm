@@ -5,7 +5,7 @@ async function run() {
   try {
     const path = core.getInput('path');
 
-    core.debug(`Load package.json at ${path}`);
+    core.debug(`Load  at ${path}`);
 
     const result = getNodeVersion(path);
 

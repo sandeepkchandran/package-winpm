@@ -3,7 +3,7 @@ import fs from 'fs';
 import { findPackageJson, getPackageVersion } from '../getPackageVersion';
 
 const fixturePath = './src/__tests__/fixture';
-const fixture = `./src/__tests__/fixture/package.json`;
+const fixture = `./src/__tests__/fixture/adobe.json`;
 
 describe('getPackageVersion', () => {
   describe('findPackageJson', () => {
